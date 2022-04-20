@@ -1,0 +1,1802 @@
+<div class="landing_page" id="unlimited">
+    <style>
+        @font-face {
+        font-family: 'icomoon';
+        src: url('/medias/icomoon.eot?context=bWFzdGVyfHJvb3R8MjYzMnxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDYyL2gwYy85ODc1OTUyNjMxODM4LmJpbnxlZDc4N2M1M2Y4MmM0MjEzMzJiZDY0MGFkYjY3NGM5MzhjOTMwMTM3ZTQxM2VhNGYzOGM1NzMxZTUwZjIzOGEw?#iefix') format('embedded-opentype'), 
+        url('/medias/icomoon.woff?context=bWFzdGVyfHJvb3R8MjU0NHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDFlL2gxOC85ODc1OTUzMTIzMzU4LmJpbnw5NjllMmRhY2MxMTZkN2MzMTMyNzQ4OWMyYzA4MDhhYmVmZjNlNGI4ZDFhYTYxMDM3YmUxNmM4MTNkMjc2NzE1') format('woff'), 
+        url('/medias/icomoon.ttf?context=bWFzdGVyfHJvb3R8MjQ2OHxhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW18aDdlL2g4NS85ODc1OTUyNTMzNTM0LmJpbnxlYTNhNGExYWQ1ODdmZjYyOTU4ZDVlNjkyYTVlM2NmMzhhNzg3ZWYwMjY0OWQ1ODMzMjhmNmIzMTQyMDQzYzdm') format('truetype'), 
+        url('/medias/icomoon.svg?context=bWFzdGVyfHJvb3R8MzM3Mnx0ZXh0L3htbHxoNzYvaGVhLzk4NzU5NTI4OTM5ODIueG1sfDYxMjBlOGY5NjdlMzljYzY3MzUxMDZhOGQ1MDQ2ZGViYmEyOGQwY2EyODJmZGUyNDAzYjM2N2VmYjhkMjRlODE') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'DINPro-Regular';
+            src: url("/medias/DINPro-Regular.otf?context=bWFzdGVyfHJvb3R8ODE4NDB8YXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtfGg1MC9oNDAvMTM0MjgwNzc0Mjg3NjYuYmlufDdkMmNkOTk5MWIxNmRkZDY1NjlmNDMwMWM3NzhlNmZhNDg5OWZkODY4ZWM2YTE3OGViZjQ4ZGI0ZDAyNzdlOWM") format('opentype'); 
+            font-weight: normal;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'DINPro-Bold';
+            src: url("/medias/DINPro-Bold.otf?context=bWFzdGVyfHJvb3R8ODM1MzZ8YXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtfGg3Ny9oNDUvMTM0MjgwNzcyMzIxNTguYmlufGI5MjMwOGNkZGY0MjU2MjdhODBiYzU1M2RiMzA1ZjkyOWVkNGM4Y2M1Y2M5MTBiM2E0ZGQ3NGYzZTFkYjI4NjE") format('opentype'); 
+            font-weight: normal;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'DINPro-Medium';
+            src: url("/medias/DINPro-Medium.otf?context=bWFzdGVyfHJvb3R8ODM2Mjh8YXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtfGg0My9oYmMvMTM0MjgwNzczMzA0NjIuYmlufGQ0Mzk3MWQ3YjkwMjBjNjNlMjNiOWYzYjM3Y2M1OTJiOWJmZDUzODIzZGViZWVmNWI2YjU2ZmUxNzU1OGU4YmQ") format('opentype'); 
+            font-weight: normal;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: 'DINProCond-medium';
+            src: url('/medias/DINW05-CondMedium.eot?context=bWFzdGVyfHJvb3R8ODMwODJ8YXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtfGg2MC9oNDAvMTM5OTcxOTcwMzM1MDIuYmlufGY2MmUxODg4YmVmZDAwYjlhZTg2YTEwMzI5M2M4MDIyYTdmYmM3MDQ4MWJjN2U0OWRmMzRlM2RiZTY3NjY1NGM') format('embedded-opentype'), 
+            url('/medias/DINW05-CondMedium.woff?context=bWFzdGVyfHJvb3R8ODc0NDl8YXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtfGg2ZC9oOGEvMTM5OTcxOTcxNjQ1NzQuYmlufDliOWRkMTE4ODkyODk4N2ExNGRhZmFkY2VhYmFjNGRkYTI0NTQ1YzhhYTkzZTFmOTkwMmNmNWE3MTgyZTVjMDY') format('woff'), 
+            url('/medias/DINW05-CondMedium.ttf?context=bWFzdGVyfHJvb3R8MjkzMTg4fGFwcGxpY2F0aW9uL29jdGV0LXN0cmVhbXxoMGMvaDBjLzEzOTk3MTk3MDk5MDM4LmJpbnw5NzI5MDhmNmIwNzRkZTE2MGNlMmQ2Yzk4YzE3NDI1OGFjYTZjNGM4YjIyYmJmMGExN2E3ZWJiZjMxZTlhNDZk') format('truetype'), 
+            url('/medias/DINW05-CondMedium.woff2?context=bWFzdGVyfHJvb3R8ODE2ODh8YXBwbGljYXRpb24vb2N0ZXQtc3RyZWFtfGhjMC9oMDEvMTM5OTcxOTcyMzAxMTAuYmlufDhjM2ZiNjU1MDI0MWMyNzEwNjY3ZGY5ODEyNDM3MjFjNzEwOWQ2NmVkYmRhYzg5MGZjY2I0NDIwNzc1MmUwOTE') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .rFloat:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .col-1 {
+            width: 100%;
+        }
+
+        .col-2 .col {
+            float: left;
+            width: 50%;
+        }
+
+        .col-2:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .col-3 .col {
+            float: left;
+            width: 33%;
+        }
+
+        .col-3:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .col-4 .col {
+            float: left;
+            width: 25%;
+        }
+
+        .col-4:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .modal-video {
+            margin: 0;
+            opacity: 0;
+            position: fixed;
+            left: 50%;
+            top: 20%;
+            z-index: -1;
+            -webkit-transform: scale(0);
+            -moz-transform: scale(0);
+            -ms-transform: scale(0);
+            -o-transform: scale(0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+            background: #fff;
+            padding: 24px;
+        }
+
+        .modal-video.show {
+            opacity: 1;
+            z-index: 200;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+        }
+
+        .modal-video .video-container {
+            position: relative;
+        }
+
+        .modal-video .video-container .video-title {
+            margin-bottom: 16px;
+            font-family: 'EurostileNextLTPro-Regular';
+            font-size: 16px;
+        }
+
+        .modal-video .video-container .close-modal {
+            position: absolute;
+            right: -60px;
+            top: -60px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .modal-video .video-container button:focus {
+            background: none !important;
+            outline: 0;
+        }
+
+        .video-bg {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .video-bg.show {
+            z-index: 100;
+            opacity: 1;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+        }
+
+        .video-btn {
+            border: none;
+            display: block;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .video-btn img:first-child {
+            width: 58px;
+            height: 58px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -29px 0 0 -29px;
+        }
+
+        .video-btn img:nth-child(2) {
+            margin: 0 auto;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        #MainBodyContent {
+            width: 100%;
+        }
+
+        .wrap-header {
+            background-color: #fff;
+        }
+
+        .landing_page p {
+            font-family: 'DINPro-regular';
+        }
+
+        .landing_page h1,
+        .landing_page h2,
+        .landing_page h3 {
+            font-family: 'DINPro-bold';
+        }
+
+        .sticky-container nav.sticky {
+            margin: 0 auto;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .sticky-container nav.sticky button {
+            display: inline-block;
+            padding: 0 20px 0;
+            font-size: 15px;
+            background: transparent;
+            border: none;
+            color: #23282c;
+            outline: none;
+            font-family: 'DINPro-medium';
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .sticky-container nav.sticky button.btn {
+            background: #009dc0;
+        }
+
+        .sticky-container nav.sticky button:after {
+            width: 0;
+            display: block;
+            content: '';
+            margin: 10px auto 0 auto;
+            height: 4px;
+            background: transparent;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+        }
+
+        .sticky-container nav.sticky button.current,
+        .sticky-container nav.sticky button:hover {
+            color: #eb322f;
+        }
+
+        .sticky-container nav.sticky button.current:after,
+        .sticky-container nav.sticky button:hover:after {
+            width: 100%;
+            background: #eb322f;
+        }
+
+        .sticky-container nav.sticky.stick {
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 50px;
+            z-index: 40;
+            background: #fff;
+        }
+
+        .sticky-container .cta {
+            color: white;
+            outline: none;
+            background-color: #eb322f;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'DINPro-medium';
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color .6s ease;
+            cursor: pointer;
+            margin-left: 20px;
+            vertical-align: top;
+        }
+
+        .sticky-container .cta:hover {
+            background-color: #a30e14;
+        }
+
+        .landing_page [class^="iconmoon-"],
+        .landing_page [class*=" iconmoon-"] {
+            font-family: 'icomoon' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .landing_page .iconmoon-add_circle:before {
+            content: "\e147";
+        }
+
+        .landing_page .iconmoon-control_point:before {
+            content: "\e3ba";
+        }
+
+        .landing_page .iconmoon-cancel:before {
+            content: "\e5c9";
+        }
+
+        .landing_page .iconmoon-check:before {
+            content: "\e5ca";
+        }
+
+        .landing_page .iconmoon-navigate_before:before {
+            content: "\e408";
+        }
+
+        .landing_page .iconmoon-navigate_next:before {
+            content: "\e409";
+        }
+
+        .landing_page .iconmoon-close:before {
+            content: "\e5cd";
+        }
+
+        .landing_page .iconmoon-remove_circle:before {
+            content: "\e15c";
+        }
+
+        .landing_page .iconmoon-expand_less:before {
+            content: "\e5ce";
+        }
+
+        .landing_page .iconmoon-expand_more:before {
+            content: "\e5cf";
+        }
+
+        .landing_page .iconmoon-lens:before {
+            content: "\e3fa";
+        }
+
+        .landing_page .iconmoon-play_arrow:before {
+            content: "\e037";
+        }
+
+        .landing_page .iconmoon-play_circle_filled:before {
+            content: "\e038";
+        }
+
+        .landing_page .iconmoon-play_circle_outline:before {
+            content: "\e039";
+        }
+
+        .landing_page .iconmoon-remove:before {
+            content: "\e15b";
+        }
+
+        .landing_page .iconmoon-remove_circle_outline:before {
+            content: "\e15d";
+        }
+
+        .landing_page .iconmoon-highlight_off:before {
+            content: "\e888";
+        }
+
+        .iconmoon-playCustom {
+            display: block;
+        }
+
+        .iconmoon-playCustom:before {
+            display: block;
+            width: 58px;
+            height: 58px;
+            background: url('https://www.tfalusa.com/medias/video-playBtn.png?context=bWFzdGVyfHJvb3R8NTIyM3xpbWFnZS9wbmd8aGE0L2g0Mi85NjQ1NDU0MzkzMzc0LnBuZ3w0N2ExNjNjZTMxYzVkZGJlYmMxZWY5MGJjNmMyYjVhYzJmYzlkMzgwZjQyNmYwZmE1MDhhNThiYjczNTliYWY2');
+            background-size: cover;
+            content: "";
+        }
+
+        .article-detail .container {
+            width: 100%;
+            padding: 0;
+        }
+
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        .comments-share {
+            width: 150px;
+            margin: 0 auto;
+        }
+
+        .comments-share a {
+            border-top: 1px solid #d1d7db;
+        }
+
+        .banner-full {
+            display: none !important;
+        }
+
+        .landing_page .modal {
+            padding: 74px 97px 50px 97px;
+            top: 120px;
+            overflow: hidden;
+            overflow-y: scroll;
+            height: 80%;
+        }
+
+        .landing_page .modal .title {
+            padding: 0;
+            font-size: 15px;
+        }
+
+        .landing_page .modal img {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            width: 2%;
+        }
+
+        .landing_page .modal .inner {
+            width: 100%;
+        }
+
+        .landing_page .modal .inner h2 {
+            text-transform: none !important;
+            font-size: 35px;
+        }
+
+        .landing_page .modal .inner ul {
+            margin: 0 0 10px 15px;
+        }
+
+        .landing_page .modal .inner span {
+            font-weight: bold;
+        }
+
+        .landing_page .modal .inner p {
+            margin: 31px 0;
+        }
+
+        .landing_page .modal-video {
+            /* top: 40% !important; */
+            top: 25vh !important;
+        }
+
+        .landing_page .modal-bg {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .landing_page .modal-bg.show {
+            z-index: 100;
+            opacity: 1;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+        }
+
+        .landing_page .modal-video {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .landing_page .modals {
+            padding: 45px !important;
+            width: 100%;
+            max-width: 800px;
+            opacity: 0;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            z-index: -1;
+            -webkit-transform: translate3d(-50%, -50%, 0) scale(0.5);
+            -moz-transform: translate3d(-50%, -50%, 0) scale(0.5);
+            -ms-transform: translate3d(-50%, -50%, 0) scale(0.5);
+            -o-transform: translate3d(-50%, -50%, 0) scale(0.5);
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+            background: #fff;
+            padding: 24px;
+            top: 65% !important;
+        }
+
+        .landing_page .modals span.close-modal {
+            position: absolute;
+            right: 0;
+            top: 15px;
+        }
+
+        .landing_page .modals.show {
+            opacity: 1;
+            z-index: 200;
+            -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+            -moz-transform: translate3d(-50%, -50%, 0) scale(1);
+            -ms-transform: translate3d(-50%, -50%, 0) scale(1);
+            -o-transform: translate3d(-50%, -50%, 0) scale(1);
+        }
+
+        .landing_page .modals .table .first {
+            width: 33%;
+            float: left;
+        }
+
+        .landing_page .modals .table .first .case {
+            padding: 14.5px 0;
+            text-align: center;
+            border: 1px solid;
+        }
+
+        .landing_page .modals .table .first .case:first-child {
+            height: 150px;
+            border: none;
+        }
+
+        .landing_page .modals .table .first .case:nth-child(2) {
+            padding: 23.2px 0;
+        }
+
+        .landing_page .modals .table .first .case p {
+            font-size: 18px;
+            color: #05acd0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .landing_page .modals .table .carousel {
+            width: 66.2%;
+            float: left;
+        }
+
+        .landing_page .modals .table .carousel .item .case {
+            padding: 60px 0;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .landing_page .modals .table .carousel .item .case:first-child {
+            border: none;
+            padding: 0;
+        }
+
+        .landing_page .modals .table .carousel .item .case:first-child p {
+            font-size: 18px;
+            top: -35px !important;
+            color: #05acd0;
+            text-transform: uppercase;
+            min-height: 46px;
+        }
+
+        .landing_page .modals .table .carousel .item .case:first-child img {
+            width: 100%;
+            margin-top: -1px;
+        }
+
+        .landing_page .icon-expand_more::before {
+            content: '\e5cf';
+        }
+
+        .landing_page .icon-expand_less::before {
+            content: '\e5ce';
+        }
+
+        .landing_page ul.slick-dots {
+            margin: 20px 0 0 0;
+            text-align: center;
+            padding: 0;
+        }
+
+        .landing_page ul.slick-dots li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 4px;
+            background: #cecece;
+            border: 2px solid #cecece;
+            border-radius: 100%;
+        }
+
+        .landing_page ul.slick-dots li.slick-active {
+            background: #474747;
+            border: 2px solid #474747;
+        }
+
+        .landing_page ul.slick-dots li button {
+            text-indent: 9999px;
+            display: none;
+        }
+
+        .landing_page .video-btn img:first-child {
+            width: 100%;
+            height: 100%;
+            position: inherit;
+            left: 0;
+            top: 0;
+            margin: 0 auto;
+        }
+
+        .landing_page .inner {
+            width: 940px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .landing_page h3,
+        .landing_page h4,
+        .landing_page h5 {
+            margin: 0;
+        }
+
+        .landing_page p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #585453;
+        }
+
+        .landing_page p span {}
+
+        .landing_page .inner button.cta.cta_light.video-btn,
+        .landing_page .inner button.cta.cta_light.see_more,
+        .landing_page .inner button.cta.cta_light.cta_download {
+            color: #3b3c4b;
+            outline: none;
+            display: block;
+            margin: 5% auto;
+            background-color: rgba(255, 255, 255, .5);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'DINPro-bold';
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: all .6s ease;
+            cursor: pointer;
+        }
+
+        .landing_page .inner button.cta.cta_light.video-btn span,
+        .landing_page .inner button.cta.cta_light.see_more span,
+        .landing_page .inner button.cta.cta_light.cta_download span {
+            font-family: 'DINPro-bold';
+            font-size: inherit;
+        }
+
+        .landing_page .inner button.cta.cta_light.see_more span.cta_picto svg,
+        .landing_page .inner button.cta.cta_light.cta_download span.cta_picto svg {
+            width: 10px;
+            height: 10px;
+        }
+
+        .landing_page .inner button.cta.cta_light.video-btn:hover,
+        .landing_page .inner button.cta.cta_light.see_more:hover,
+        .landing_page .inner button.cta.cta_light.cta_download:hover {
+            color: white;
+            background-color: #3b3c4b;
+        }
+
+        .landing_page .inner button.cta.cta_light:hover span.cta_picto svg [class^="st"] {
+            stroke: white;
+        }
+
+        /*
+        .landing_page .title {
+            padding: 50px 0 45px 0;
+        }
+        */
+
+        /*
+        .landing_page .title h2 {
+            color: #eb322f;
+            line-height: 1;
+            font-size: 60px;
+            text-align: center;
+        }
+        */
+
+        /*
+        .landing_page .title h2 span {
+            font-size: 45px;
+            color: #3b3c4b;
+            font-family: 'DINPro-bold';
+        }
+        */
+
+        .landing_page .title h1,
+        .landing_page .title h2 {
+            font-weight: normal;
+            margin: 0;
+        }
+
+
+        .landing_page .has-bg {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .landing_page section {
+            position: relative;
+        }
+
+        .landing_page .section {
+            padding: 50px 0;
+            position: relative;
+        }
+
+
+        .inner a.cta.buy_online {
+            color: white;
+            outline: none;
+            background-color: #eb322f;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'DINPro-medium' !important;
+            padding: 10px 40px;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: background-color .6s ease;
+            cursor: pointer;
+        }
+
+        .inner a.cta.buy_online:hover {
+            background-color: #a30e14;
+        }
+
+
+        .inner button.cta.cta_dark.video-btn,
+        .inner button.cta.cta_dark.see_more,
+        .inner button.cta.cta_dark.cta_download {
+            outline: none;
+            color: white;
+            display: block;
+            margin: 5% auto;
+            background-color: rgba(255, 255, 255, .5);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'DINPro-medium';
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: all .6s ease;
+            cursor: pointer;
+        }
+
+        .inner button.cta.cta_dark.video-btn span:first-of-type {
+            font-family: 'DINPro-medium';
+        }
+
+        .inner button.cta.cta_dark.see_more span.cta_picto svg,
+        .inner button.cta.cta_dark.cta_download span.cta_picto svg {
+            width: 10px;
+            height: 10px;
+        }
+
+        .inner button.cta.cta_dark.video-btn:hover,
+        .inner button.cta.cta_dark.see_more:hover,
+        .inner button.cta.cta_dark.cta_download:hover {
+            background-color: white;
+            color: #eb322f;
+        }
+
+        .inner button.cta.cta_dark:hover span.cta_picto svg [class^="st"] {
+            stroke: #eb322f;
+        }
+
+        .inner button.cta.cta_light.video-btn,
+        .inner button.cta.cta_light.see_more,
+        .inner button.cta.cta_light.cta_download {
+            color: #3b3c4b;
+            outline: none;
+            display: block;
+            margin: 5% auto;
+            background-color: rgba(255, 255, 255, .5);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'DINPro-medium';
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: all .6s ease;
+            cursor: pointer;
+        }
+
+
+        .inner button.cta.cta_light.see_more span.cta_picto svg,
+        .inner button.cta.cta_light.cta_download span.cta_picto svg {
+            width: 10px;
+            height: 10px;
+        }
+
+        .inner button.cta.cta_light.video-btn:hover,
+        .inner button.cta.cta_light.see_more:hover,
+        .inner button.cta.cta_light.cta_download:hover {
+            color: white;
+            background-color: #3b3c4b;
+        }
+
+        .inner button.cta.cta_light:hover span.cta_picto svg [class^="st"] {
+            stroke: white;
+        }
+
+        /** INTRO **/
+
+        #unlimited #intro {
+            position: relative;
+            background-image: url('https://www.tfalusa.com/medias/HeroBanner.jpg?context=bWFzdGVyfHJvb3R8NjIwNDh8aW1hZ2UvanBlZ3xoNGUvaGU0LzE1NDE2MzU2MDQ0ODMwLmpwZ3xhYzVhZDFiNThkYmVhMjJiNzRhNzI0NTUzNzRiNWExZjczNmI0ZTA4OGJhODU5YjZlNTljYmIzNTc4MmZjZmFi');
+            background-size: cover; 
+            background-position: top right;
+        }
+
+        #unlimited #intro .header-badge {
+            position: absolute;
+            top: 6%;
+            right: 21%;
+        }
+
+        #unlimited #intro .inner {
+            padding: 8px 0 30px 5%;
+            position: relative;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        #unlimited #intro .inner img {
+            display: block;
+        }
+
+        #unlimited #intro .inner .title {
+            display: inline-block;
+            position: relative;
+            margin: 56px 0;
+        }
+
+        #unlimited #intro .inner .title h1 {
+            font-size: 71px;
+            color: #fff;
+            font-family: 'DINPro-bold';
+            font-weight: 900;
+            text-align: center;
+            line-height: 1;
+            display: inline-block;
+            padding: 0 2vw;
+            text-transform: uppercase;
+        }
+
+        #unlimited #intro .inner .title sup {
+            font-size: 25px;
+            top: -0.2em;
+            vertical-align: super;
+        }
+
+        #unlimited #intro .inner .title h1 span {
+            font-size: 73px;
+            color: #fff;
+            font-family: 'DINPro-bold';
+            font-weight: 900;
+        }
+
+        #unlimited #intro .inner .title:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -26px;
+            left: 0;
+            width: 99px;
+            height: 25px;
+            background-image: url("/medias/g6-intro-bracket-left.png?context=bWFzdGVyfHJvb3R8MzAzOXxpbWFnZS9wbmd8aGNlL2hkNS8xMzkyMDM3MDcyMDc5OC5wbmd8OWQ1MmYyZjgwYmRiYzRhYjMxOTRiZmRhNDczOGEzNTZiMDhjN2Y4Y2ZjNzVjM2E4ZmI0ZjkzNGQ0NDM3ZGRlYQ");
+        }
+
+        #unlimited #intro .inner .title:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -22px;
+            right: 20px;
+            width: 99px;
+            height: 25px;
+            background-image: url("https://www.tfalusa.com/medias/g6-intro-bracket-right.png?context=bWFzdGVyfHJvb3R8MzAwM3xpbWFnZS9wbmd8aGU1L2g5ZC8xMzkyMDM3MDgxOTEwMi5wbmd8NTljN2ViZGZkMDFkNjA1ODAwNGRmNDdjZjE4MGUxY2U4OWI1OGRlMjNjZjQ3Y2VjNDkwYWRkOTZlMmEzYTcxOA");
+        }
+
+        #unlimited #intro .inner a {
+            display: block;
+            width: fit-content;
+            width: -moz-fit-content;
+        }
+
+        #unlimited #intro .inner .video-btn {
+            margin: 2% auto;
+        }
+
+        #unlimited #intro .inner a.video-btn span {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+
+        #unlimited #intro .disclaimer {
+            position: absolute;
+            bottom: 20px;
+            left: 3%;
+            font-size: 9px;
+            color: #fff;
+            font-family: 'DINPro-regular';
+        }
+
+        @media screen and (max-width: 1550px) {
+            #unlimited #intro .inner .title h1 {
+                font-size: 55px;
+            }
+        }
+
+      
+        @media screen and (max-width: 1470px) {
+            #unlimited #intro {
+                padding: 75px 0;
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+            #unlimited #intro {               
+                background-position: center center;
+            }
+            #unlimited #intro .inner .title h1 {
+                font-size: 55px;
+            }
+            #unlimited #intro .inner {
+                width: 52%;
+            }
+            #unlimited #intro .header-badge {
+                right: 8%;
+            }
+
+        }
+
+        /** NAV **/
+
+        .sticky-container a.cta {
+            vertical-align: top;
+        }
+
+        /** SECTION 1 **/
+
+        #unlimited #section-1 {
+            background-position: top center;
+            text-align: center;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        #unlimited #section-1 .inner {
+            width: 100%;
+            max-width: 1300px;
+        }
+
+        #unlimited #section-1 .inner .title {
+            margin-bottom: 58px;
+        }
+
+        #unlimited #section-1 .inner .title h2 {
+            font-size: 40px;
+            font-family: 'DINPro-bold';
+            color: #fff;
+            text-align: center;
+            text-shadow: 0px 0px 20px #333;
+        }
+
+        #unlimited #section-1 .inner .col-3 {
+            padding-bottom: 16px;
+        }
+
+        #unlimited #section-1 .inner .col-3 .col {
+            text-align: center;
+            padding: 0 3%;
+        }
+
+        #unlimited #section-1 .inner .col-3 .col img {
+            margin: 0 auto 22px;
+        }
+
+        #unlimited #section-1 .inner .col-3 .col:last-of-type img {
+            -webkit-filter: drop-shadow(0px 0px 10px #eb212e);
+            filter: drop-shadow(0px 0px 10px #eb212e);
+        }
+
+        #unlimited #section-1 .inner .col-3 .col p {
+            color: #fff;
+            line-height: 1.2;
+            font-size: 23px;
+            font-family: 'DINPro-regular';
+            margin: 20px auto;
+        }
+
+        #unlimited #section-1 .inner .col-3 .col:first-child p {
+            width: 94%;
+        }
+
+        #unlimited #section-1 .inner .col-3 .col h5 {
+            font-size: 30px;
+            font-family: 'DINPro-bold';
+            line-height: 1.2;
+            color: #fff;
+            min-height: 72px;
+            margin-bottom: 20px;
+        }
+
+        #unlimited #section-1 .inner .col-3 .col a {
+            color: #eb322f;
+            text-decoration: underline;
+            font-size: 20px!important;
+            font-family: 'DINPro-bold';
+        }
+
+        #unlimited #section-1 p.disclaimer {
+            color: #ddd;
+            font-size: 9px;
+            text-align: left;
+            padding-left: 4.5%;
+            margin-bottom: 2%;
+            font-family: 'DINPro-regular';
+        }
+
+        @media screen and (max-width: 1200px) {
+            #unlimited #section-1 .inner .col-3 .col p {
+                font-size: 20px;
+            }
+            #unlimited #section-1 .inner .col-3 .col {
+                padding: 0 2%;
+            }
+        }
+
+        
+
+        /** SECTION 2 **/
+
+        #unlimited #section-2 {
+            background-position: top center;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #unlimited #section-2 .left-col {
+            flex: 1.2;
+        }
+
+        #unlimited #section-2 .right-col {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #unlimited #section-2 h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 60px;
+        }    
+
+        #unlimited #section-2 p {
+            color: #fff;
+            font-family: 'DINPro-Regular';
+            font-size: 26px;
+            max-width: 75%;
+            margin: 20px 0 50px;
+        } 
+
+
+        #unlimited #section-2 .commitment {
+            max-width: 460px;
+            margin-left: 100px;
+        } 
+
+
+
+        
+
+     
+
+
+        @media screen and (max-width: 1700px) {
+            #unlimited #section-2 p {               
+                font-size: 26px;
+                max-width: 86%;
+            }   
+          
+        }
+
+        @media screen and (max-width: 1600px) {
+            #unlimited #section-2 h2 {
+                font-size: 51px;
+            }
+            #unlimited #section-2 p {
+                font-size: 23px;
+                margin: 20px 0 70px;
+            }
+        }
+
+        @media screen and (max-width: 1500px) {
+            #unlimited #section-2 .right-col {
+                padding-left: 2%;
+            }
+        }
+
+        @media screen and (max-width: 1400px) {
+            #unlimited #section-2 .right-col {
+                padding-left: 2%;
+            }
+            #unlimited #section-2 .left-col {
+                flex: 1;
+            }
+            #unlimited #section-2 .commitment {
+                max-width: 380px;
+            }
+            #unlimited #section-2 p {
+                font-size: 20px;
+            }
+            #unlimited #section-2 h2 {
+                font-size: 47px;
+            }
+
+        }
+
+
+        @media screen and (max-width: 1200px) {
+            #unlimited #section-2 .left-col {
+                flex: 1.3;
+            }
+            #unlimited #section-2 p {
+                max-width: 100%;
+            }
+            #unlimited #section-2 h2 {
+                font-size: 42px;
+            }
+            #unlimited #section-2 .commitment {
+                max-width: 320px;
+            }
+        }
+
+        
+
+
+
+        /** SECTION 3 **/
+
+        #unlimited #section-3 {
+            background-position: top center;
+            padding: 1vw 7vw;
+        }
+
+        #unlimited #section-3 .inner {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #unlimited #section-3 .title {
+            text-align: center;
+            padding: 50px 0 120px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        #unlimited #section-3 .title h2 {
+            color: #fff;
+            font-family: 'DINPro-bold';
+            font-size: 47px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #unlimited #section-3 .title img {
+            margin: 23px 0;
+            max-width: 464px;
+        }
+
+        #unlimited #section-3 .inner a.cta.buy_online {
+            padding: 8px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            background: #fff;
+            color: #eb322f;
+            white-space: nowrap;
+            font-family: 'DINPro-medium'!important;
+        }
+
+        #unlimited #section-3 .inner a.cta.buy_online:hover {
+            background-color:rgba(255, 255, 255, .5);
+            color: #fff;
+        }
+
+        #unlimited #section-3 .inner .wrapper {
+           width: 100%;
+            display: flex;
+        }
+
+        #unlimited #section-3 .inner .wrapper .item {
+            flex: 1;
+            display: inline-block;
+            margin: 0 25px 4rem;
+            text-align: center;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            max-width: 740px;
+        }
+
+        #unlimited #section-3 .inner .wrapper .item>div {
+            min-width: 170px;
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 50px;
+            background: linear-gradient( 180deg, rgba(235,33,46,0.9) 15%, rgba(154,10,15,0.9) 90% );
+            border-bottom-left-radius: 35px;
+        }
+
+        #unlimited #section-3 .inner .wrapper .item>a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            border: 6px solid rgba(223,37,48,0.95);
+            border-bottom-color: rgba(154,10,15,0.9);
+            border-top-right-radius: 35px;
+            background: white;
+            border-left: none;
+            border-right-width: 12px;
+        }
+
+        #unlimited #section-3 .inner .wrapper .item .main {
+            color: #fff;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: 'DINPro-bold';
+            margin-bottom: 20px;
+            height: 40px;
+        }
+
+        #unlimited #section-3 .inner .wrapper .item img {
+            width: -webkit-fill-available;
+            mix-blend-mode: multiply !important;
+        }
+
+        #unlimited #section-3 .inner .wrapper .item p {
+            font-size: 17px;
+            font-family: 'DINPro-regular';
+            text-align: left;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        #unlimited #section-3 .inner .wrapper .item p.name {
+            font-size: 30px;
+            font-family: 'DINPro-bold';
+            text-align: left;
+            line-height: 1.2;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+            color: #fff;
+        }
+
+        #unlimited #section-3 .inner .wrapper .item p:last-of-type {
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: 1700px) {
+            #unlimited #section-3 .inner .wrapper .item>div {
+                padding: 60px 30px;
+            }
+        }
+
+        @media screen and (max-width: 1600px) {
+            #unlimited #section-3 .inner .wrapper .item {
+                margin: 0 15px 4rem;
+            }
+            #unlimited #section-3 {
+                padding: 1vw 4vw;
+            }
+        }
+
+        @media screen and (max-width: 1450px) {
+            #unlimited #section-3 .inner .title img {
+                max-width: 40vw;
+                padding-right: 50px;
+            }
+        }
+
+        @media screen and (max-width: 1300px) {
+            #unlimited #section-3 .inner .wrapper .item p {
+                font-size: 14px;
+            }
+            #unlimited #section-3 .inner .wrapper .item p.name {
+                font-size: 26px;
+            } 
+            #unlimited #section-3 .inner .wrapper .item>div {
+                padding: 46px 30px;
+            }         
+        }
+
+        @media screen and (max-width: 1200px) {
+            #unlimited #section-3 {
+                padding: 7vw 3vw;
+            }           
+        }
+
+        
+
+        /** SECTION 4 **/
+
+        #unlimited #section-4 {
+            padding: 43px 0 10px;
+            background: rgb(238, 238, 238);
+            background: linear-gradient(180deg, rgba(238, 238, 238, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        #unlimited #section-4 .inner {
+            width: 100%;
+            max-width: 1166px;
+        }
+
+        #unlimited #section-4 .inner .title {
+            margin-bottom: 20px;
+        }
+
+        #unlimited #section-4 .inner .title h2 {
+            color: #eb322f;
+            font-size: 34px;
+            font-family: 'DINPro-bold';
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        #unlimited #section-4 .inner .title p {
+            color: #3b3c4b;
+            font-size: 20px;
+            font-family: 'DINPro-regular';
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        #unlimited #section-4 .inner .col-4 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #unlimited #section-4 .inner .col-4 .col {
+            padding: 0;
+            margin: 15px;
+            text-align: center;
+        }
+
+        #unlimited #section-4 .inner .col-4 .col:first-child {
+            margin-left: 0;
+        }
+
+        #unlimited #section-4 .inner .col-4 .col:last-child {
+            margin-right: 0;
+        }
+
+        #unlimited #section-4 .inner .col-4 .col img {
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        #unlimited #section-4 .inner .col-4 .col p {
+            color: #3b3c4b;
+            font-size: 21px;
+            font-family: 'DINPro-regular';
+            line-height: 1.2;
+            text-align: center;
+        }
+
+
+        /** SECTION 5 **/
+
+
+        #unlimited #section-5 .inner {
+            padding: 60px 0 60px 50%;
+            text-align: center;
+            width: 100%;
+        }
+
+        #unlimited #section-5 .inner p {
+            font-size: 26px;
+            color: #fff;
+            font-family: 'DINPro-regular';
+        }
+
+        #unlimited #section-5 .inner p span {
+            font-size: 26px;
+            color: #fff;
+            font-family: 'DINPro-bold';
+        }
+
+        #unlimited #section-5 .inner > p:last-of-type {
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+
+        #unlimited #section-5 .inner .title {
+            display: inline-block;
+            position: relative;
+            margin: 70px 0;
+        }
+
+        #unlimited #section-5 .inner .title:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -30px;
+            left: -50px;
+            width: 99px;
+            height: 25px;
+            background-image: url("/medias/g6-intro-bracket-left.png?context=bWFzdGVyfHJvb3R8MzAzOXxpbWFnZS9wbmd8aGNlL2hkNS8xMzkyMDM3MDcyMDc5OC5wbmd8OWQ1MmYyZjgwYmRiYzRhYjMxOTRiZmRhNDczOGEzNTZiMDhjN2Y4Y2ZjNzVjM2E4ZmI0ZjkzNGQ0NDM3ZGRlYQ");
+        }
+
+        #unlimited #section-5 .inner .title:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -30px;
+            right: -50px;
+            width: 99px;
+            height: 25px;
+            background-image: url("https://www.tfalusa.com/medias/g6-intro-bracket-right.png?context=bWFzdGVyfHJvb3R8MzAwM3xpbWFnZS9wbmd8aGU1L2g5ZC8xMzkyMDM3MDgxOTEwMi5wbmd8NTljN2ViZGZkMDFkNjA1ODAwNGRmNDdjZjE4MGUxY2U4OWI1OGRlMjNjZjQ3Y2VjNDkwYWRkOTZlMmEzYTcxOA");
+        }
+
+        #unlimited #section-5 .inner .title h2 {
+            font-size: 48px;
+            color: #fff;
+            font-family: 'DINPro-bold';
+            font-weight: 900;
+            text-align: center;
+            line-height: 1;
+            display: inline-block;
+        }
+
+        #unlimited #section-5 .inner .title h2 span {
+            font-size: 73px;
+            color: #fff;
+            font-family: 'DINPro-bold';
+            font-weight: 900;
+        }
+
+        /** SECTION 6 **/
+
+        #unlimited #section-6 {
+            background-position: top center;
+            padding-bottom: 90px;
+        }
+
+        #unlimited #section-6 .inner {
+            text-align: center;
+            position: relative;
+        }
+
+        #unlimited #section-6 .inner .title {
+            padding: 0;
+            display: block;
+            z-index: 15;
+            position: relative;
+            margin: 8% auto;
+            width: 280px;
+        }
+
+        #unlimited #section-6 .inner .title h2 {
+            color: #fff;
+            font-size: 32px;
+            line-height: 1;
+            position: relative;
+            display: inline-block;
+            text-shadow: 0px 0px 30px black;
+            font-family: 'DINPro-bold';
+        }
+
+        #unlimited #section-6 .inner .title h2:before {
+            content: '';
+            width: 99px;
+            height: 25px;
+            background-image: url("https://www.tfalusa.com/medias/g6-intro-bracket-left.png?context=bWFzdGVyfHJvb3R8MzAzOXxpbWFnZS9wbmd8aGNlL2hkNS8xMzkyMDM3MDcyMDc5OC5wbmd8OWQ1MmYyZjgwYmRiYzRhYjMxOTRiZmRhNDczOGEzNTZiMDhjN2Y4Y2ZjNzVjM2E4ZmI0ZjkzNGQ0NDM3ZGRlYQ");
+            position: absolute;
+            display: block;
+            left: -25px;
+            top: -35px;
+        }
+
+        #unlimited #section-6 .inner .title h2:after {
+            content: '';
+            width: 99px;
+            height: 25px;
+            background-image: url("https://www.tfalusa.com/medias/g6-intro-bracket-right.png?context=bWFzdGVyfHJvb3R8MzAwM3xpbWFnZS9wbmd8aGU1L2g5ZC8xMzkyMDM3MDgxOTEwMi5wbmd8NTljN2ViZGZkMDFkNjA1ODAwNGRmNDdjZjE4MGUxY2U4OWI1OGRlMjNjZjQ3Y2VjNDkwYWRkOTZlMmEzYTcxOA");
+            position: absolute;
+            display: block;
+            right: -25px;
+            bottom: -40px;
+        }
+
+        #unlimited #section-6 .inner a {
+            font-size: 20px;
+            color: #3b3c4b;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            font-family: 'DINPro-regular';
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+            
+    </style>  
+    <section id="intro" class="section has-bg">
+        <div class="inner">
+            <img src="https://www.tfalusa.com/medias/Platinum-01CU.png?context=bWFzdGVyfHJvb3R8Mjc4OHxpbWFnZS9wbmd8aDg0L2hhZC8xNTI3OTk1NDY1NzMxMC5wbmd8YjBjY2Q2NjAxODBlNDc5YzlhMDZmZDA1YWQxY2UxNmE5N2E4MWU0MjkyMjNhMWUxODgzYTMwMzg1Yjg5MDNkNw"
+                alt="">
+            <div class="title">
+                <h1>Longest Lasting<br />Non-Stick in<br /> the USA<sup>1</sup></h1>
+            </div>
+            <a href="https://www.amazon.com/T-fal-Unlimited-Cookware-Platinum-Nonstick/dp/B0979CV2L5/ref=sr_1_3?dchild=1&keywords=nonstick+cookware+set&qid=1629297749&sr=8-3" class="cta buy_online">shop now</a>
+            <!-- <button class="cta video-btn cta_dark" data-videoid="Pz2dOEejiu8"><span>watch the video </span><span
+                    class="iconmoon-play_circle_outline"></span></button>   -->
+        </div>
+        <img class="header-badge" src="https://www.tfalusa.com/medias/10xBadge.png?context=bWFzdGVyfHJvb3R8NTI1OTd8aW1hZ2UvcG5nfGgzNS9oMGEvMTU0MTYzNTU5NzkyOTQucG5nfGI5OWM4ZjkwOTE3ZTQyMzIxY2ZiNGQ3YTIzMjA5ZjdmZGI5NmZiMWVlZTE1OGI0ZTg0YWQ2MDcxYmVkNzhlNmQ" alt="Platinum 5-layer non-stick technology" />
+       
+        <!-- <p class="disclaimer"><sup>1</sup> vs top 10 non-stick aluminum pans 2020, abrasion &amp; non stick test<br /><sup>2</sup> Among T-fal ranges</p> -->
+    </section>
+    <div class="sticky-container" id="_navigation" role="nav">
+        <nav class="sticky">
+            <button data-section="0">Longest Lasting Non-Stick</button>
+            <button data-section="1">Discover Platinum Coating</button>
+            <button data-section="2">5-layer construction</button>
+            <button data-section="4">CHOOSE COLLECTION</button>
+            <button data-section="3">RECIPES</button>
+            <!-- <a data-section="4" class="cta">BUY NOW</a> -->
+        </nav>
+    </div>
+    <section data-section="0" class="section video-section">
+        <style>
+            section.video-section {
+                background: url('https://www.tfalusa.com/medias/video-bg.jpg?context=bWFzdGVyfHJvb3R8NjU4OTB8aW1hZ2UvanBlZ3xoNTIvaDY1LzE1NDE3MTY1MjUwNTkwLmpwZ3xjNmY0OGQyMDQ5YjFiMTA4ZTNhMDkxZDkwZmJiN2RkNTFkMjNmNjM4YWQ4MGQyN2Y3NWYxMmEyM2IwNWFkYTQy');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 12vw!important;
+                margin-bottom: 20px;
+            }
+
+           
+        </style>
+        <a data-videoid="qkYmmv5Welw" class="video-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="105" viewBox="0 0 134 105"><image id="Vector_Smart_Object_copy_5" data-name="Vector Smart Object copy 5" width="134" height="105" xlink:href="data:img/png;base64,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"></image></svg>
+            
+        </a>     
+    </section>
+    <section data-section="1" id="section-1" class="section has-bg"
+        style="background-image: url('https://www.tfalusa.com/medias/Discover-Platinum.jpg?context=bWFzdGVyfHJvb3R8MTA1OTU3fGltYWdlL2pwZWd8aDg3L2hjOS8xNTI3MDQxNzI2ODc2Ni5qcGd8MjEyYjJiY2RlYjA3MDhhOWU2YTI2ODM2ZmEwMGE2NzVmZTQ5NTU3NGI3MjYyYzFiMjQ1NDEzYTM5Mzg2ZGYwMA');background-size: cover; background-position: center;">
+        <div class="inner">
+            <div class="title">
+                <h2>Discover Platinum</h2>
+            </div>
+            <div class="col-3">
+                <div class="col">
+                    <img src="https://www.tfalusa.com/medias/Thermospot.png?context=bWFzdGVyfHJvb3R8MTk3ODR8aW1hZ2UvcG5nfGg5Yy9oMWUvMTUyNzA0MTY5NDEwODYucG5nfGQ5ZTUwYmMzY2VkOGM3MDJlNzJhZGEwYjViYTA4MGQxN2NkY2E4OTk0MGM0MmY5ZGMzMmQ0ODJmYWU0ZDcyZTU"
+                        alt="">
+                    <h5>Thermo-Spot®<br />Technology</h5>
+                    <a class="video-btn" data-videoid="sJ_A8RYaYm0">Discover more</a>
+                    <p>Turns red when cookware<br />is perfectly preheated</p>
+                </div>
+                <div class="col">
+                    <img src="https://www.tfalusa.com/medias/10xBadge.png?context=bWFzdGVyfHJvb3R8NTI1OTd8aW1hZ2UvcG5nfGgzNS9oMGEvMTU0MTYzNTU5NzkyOTQucG5nfGI5OWM4ZjkwOTE3ZTQyMzIxY2ZiNGQ3YTIzMjA5ZjdmZGI5NmZiMWVlZTE1OGI0ZTg0YWQ2MDcxYmVkNzhlNmQ"
+                        alt="">
+                    <h5>Metal Utensil<br />Safe Coating</h5>
+                    <a class="video-btn" data-videoid="xAPIs7zrRZU">Discover more</a>
+                    <p>Designed for tough usage<br/>and durability</p>
+                </div>
+                <div class="col">
+                    <img src="https://www.tfalusa.com/medias/Base.png?context=bWFzdGVyfHJvb3R8MzEwMTB8aW1hZ2UvcG5nfGg2Zi9oMmIvMTUyNzA0MTY4MTAwMTQucG5nfGIzYWM4MGVjOThhOGFiMDlmOWIzNzU4MDA3NDUwOTYzMTFlMGFhODBjYWY2MDJhYjk1OTA4MTZlM2JiOWJkMjg"
+                        alt="">
+                    <h5>Induction<br />Base</h5>
+                    <a class="video-btn" data-videoid="FCL7jef9WbM">Discover more</a>
+                    <p>Even heat base for no hot spots<br />and reliable cooking results</p>
+                </div>
+            </div>
+            <!-- <p class="disclaimer"><sup>3</sup>vs T-fal basic coatings</p> -->
+        </div>
+    </section>
+    <section data-section="2" id="section-2" class="section has-bg"
+        style="background-image: url('https://www.tfalusa.com/medias/Background.jpg?context=bWFzdGVyfHJvb3R8NjM4NzJ8aW1hZ2UvanBlZ3xoZGIvaDhhLzE1NDE3Mjk3NjAwNTQyLmpwZ3xmYzQ5MDljNTU3NWUyZTAyYjY2NzcwNWRiODk1MjZjYjY1MWI1NzBjODAxMjRkNjRjMzQwNzM5YmZjNzc2OTdi')">
+                 <div class="left-col">
+                    <picture>
+                        <source media="(max-width: 1600px)" srcset="https://www.tfalusa.com/medias/ConfidentCooking-1-1600.png?context=bWFzdGVyfHJvb3R8MTU4NDU5fGltYWdlL3BuZ3xoNWUvaGU5LzE1NDE4NzcxOTMxMTY2LnBuZ3wxMDVlOGVlZjIzZjJiMjRkN2ZhYmE0MzExNjExYjMzOTI4MmJiOGY4M2ZkYWUxNjA0MzRiOWFkYTUwYTRmYTlk">
+                        <source media="(max-width: 768px)" srcset="https://www.tfalusa.com/medias/ConfidentCooking-1-1600.png?context=bWFzdGVyfHJvb3R8MTU4NDU5fGltYWdlL3BuZ3xoYTgvaGU3LzE1NDE4NzcyMTYwNTQyLnBuZ3w3MGI0ZmQzNDJkMDlkMDQwMzg5MzlmYWMxZDkxZjA3M2M3NjQ3OWQ5OGFlYWFkNWZlNGUyMGQ1Yzk0N2JlYmY2">
+                        <img src="https://www.tfalusa.com/medias/ConfidentCooking444.png?context=bWFzdGVyfHJvb3R8MTI3ODM4fGltYWdlL3BuZ3xoOGYvaGI0LzE1NDE4Nzk4NzAyNjIyLnBuZ3xlNDI1ZTkyMWJkODU2NzNhMjIwZmRhM2RjZTI3MDkzZGMwYjZmZDZhMmJkMzEyNTY1NmY4MDJlNGQ0OTgzMmQx">
+                    </picture>
+                    
+                </div>
+           
+            <div class="right-col">
+                <h2>5-Layer Construction</h2>
+                <p>A multilayer construction and a safe coating ensures long lasting, durable performance even with tough usage. </p>
+                <img class="commitment" src="https://www.tfalusa.com/medias/Badge.png?context=bWFzdGVyfHJvb3R8MzkxNTl8aW1hZ2UvcG5nfGgzYy9oOGYvMTU0MTcyOTY5Nzc5NTAucG5nfGY0MTk2YmVlZDE2OWM3MmFhNjliM2Y0NDgyYjBhZDdkNmMzMDRiNGM3ZTE2MDkyMmNhNDA4NjQ3NjJmYjU2NDU" />
+            </div>
+    </section>
+    <section data-section="4" id="section-3"            class="section has-bg"
+        style="background-image: url('https://www.tfalusa.com/medias/Choose-Collection-bg.jpg?context=bWFzdGVyfHJvb3R8MTA5ODkyfGltYWdlL2pwZWd8aGE0L2hiOC8xNTI3MDQxNjU4MDYzOC5qcGd8MzdiNTQ5MTFkZjg1MmRhYmYwZWIzMDQyZTA0OTA0YTNlMDcwNGNhN2I4YmVjZmM3MGEyYzQzNzFiZDI2ZWYzZA')">
+         <div class="title">
+                <h2>Choose your</h2>
+                <img src="https://www.tfalusa.com/medias/Platinum-01CU.png?context=bWFzdGVyfHJvb3R8NTMzNnxpbWFnZS9wbmd8aDZiL2g4Yi8xNTI3OTk1NjE2NDYzOC5wbmd8Yzc5MDEzNzcwMjVlYTA4Mzk4Yzc4N2ZhYWRkZThlMzI2MjgzYmU4NjRlOTJjMDU3MWJmYmI1YmI3MDlhNmI5MA"
+                    alt="">
+                <h2>collection</h2>
+            </div>
+        <div class="inner">
+           
+            <div class="wrapper">
+                <div class="item">
+                    <div>
+                        <p class="name">Unlimited</p>
+                        
+                        <p>- Platinum coating</p>
+                        <p>- Induction compatible base</p>
+                        <p>- Cast stainless steel handles</p>
+                        <a href="https://www.amazon.com/T-fal-Unlimited-Cookware-Platinum-Nonstick/dp/B0979CV2L5/ref=sr_1_3?dchild=1&keywords=nonstick+cookware+set&qid=1629297749&sr=8-3" class="cta buy_online">buy online</a>
+                    </div>
+                    <a href="https://www.amazon.com/T-fal-Unlimited-Cookware-Platinum-Nonstick/dp/B0979CV2L5/ref=sr_1_3?dchild=1&keywords=nonstick+cookware+set&qid=1629297749&sr=8-3">
+                        <img src="https://www.tfalusa.com/medias/unlimited.png?context=bWFzdGVyfHJvb3R8MzE2NTh8aW1hZ2UvcG5nfGhjMC9oYTQvMTUyNzA0MTczOTk4MzgucG5nfGNiNjcyNWFlMDQ1YTEzYTM3N2Y5YTUxYTZiYzJkNGRkY2I5YjY1ZThhMDI5MDNhMTU4MjQzNDEzMDdlMzExODg"
+                            alt="Unlimited">
+                    </a>
+                </div>
+                <div class="item">
+                    <div>
+                        <p class="name">Endurance</p>                    
+                        <p>- Platinum coating</p>
+                        <p>- Even heat base</p>
+                        <p>- Stainless steel handles</p>
+                        <a href="https://www.target.com/p/t-fal-endurance-collection-platinum-nonstick-14pc-cookware-set/-/A-79753386#lnk=sametab" class="cta buy_online">buy online</a>
+                    </div>
+
+                    <a href="https://www.target.com/p/t-fal-endurance-collection-platinum-nonstick-14pc-cookware-set/-/A-79753386#lnk=sametab">
+                        <img src="https://www.tfalusa.com/medias/endurance.png?context=bWFzdGVyfHJvb3R8MzU2MzZ8aW1hZ2UvcG5nfGg2NS9oODcvMTUyNzA0MTc0NjUzNzQucG5nfGUzNzgyYjk0YzhiZDNjZDNhNDgzZTQyODU5YTU0MDc0MWM4ZGZiZDVmYmU5OWE0M2VkM2I5NDE0ZDFiZGFkNWI"
+                            alt="Endurance">
+                    </a>
+                </div>
+               
+                <!--
+                <div class="item">
+                    <p class="main">Excellence</p>
+                    <a href="#">
+                        <img src="https://www.tfalusa.com/medias/g6-gammes-unl-section-3-product-3.png?context=bWFzdGVyfHJvb3R8MTUzOTV8aW1hZ2UvcG5nfGhhMS9oMzUvMTM5MjAzNjk2MDY2ODYucG5nfDUzNDQxYTczNmI0NjgyNTEzYmMzNzc1NmU2MjNiZjc5ZjI4MGQ3ZGVhNDhiNGMwYmVjNDgyYjg0ZmZjNzMyMGQ" alt="">
+                    </a>
+                    <p>- All hobs + induction</p>
+                    <p>- Sleek-design handle</p>
+                    <a href="#" class="cta buy_online">buy online</a>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+    <section data-section="3" id="section-4" class="section" >
+            <div class="inner">
+                <div class="title">
+                    <h2><big>
+                            <font color="red">Follow T-fal on Social Media</font>
+                        </big></h2>
+                    <p>For tips, tricks, and delicious recipes with Platinum</p>
+                </div>
+                <div class="col-4">
+                    <div class="col">
+                        <a href="https://www.instagram.com/p/CKhJ0H0l1YG/" target="_blank">
+                            <img src="https://www.tfalusa.com/medias/Chicken-Taco-Skillet.png?context=bWFzdGVyfHJvb3R8MTAzMTg4fGltYWdlL3BuZ3xoM2IvaDEyLzE1MjcwNDE3MDA2NjIyLnBuZ3xlOTg3M2ExY2Y4NDc2NWE1NzM0NDEzOTc2YzMwZjEwZDVkMDQ4NGU4OTIyNDcxYjU5MDQ2YWE4NmVkMDIzNTBl"
+                                alt="Chicken Taco Skillet">
+                            <p>Chicken Taco Skillet</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.instagram.com/p/CL2Ofynrgre/" target="_blank">
+                            <img src="https://www.tfalusa.com/medias/Honey-Glazed-Salmon.png?context=bWFzdGVyfHJvb3R8OTk4MDl8aW1hZ2UvcG5nfGhkMC9oMzcvMTUyNzA0MTcxMzc2OTQucG5nfGE4MjdkMzhjNTk2OGE1MzI2NDY2OTNjZTUxMmRlYjgyMWM0MWE5ZDc5ZjQ2NjBlNzA3OGRmOWFkOTE5ZWQ2YmM"
+                                alt="Honey Glazed Salmon">
+                            <p>Honey Glazed Salmon</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://m.facebook.com/tfalusa/photos/a.303725110614/10165029923915615/?type=3&source=48&__tn__=EH-R" target="_blank">
+                            <img src="https://www.tfalusa.com/medias/Teriyaki-Rice-Bowl.png?context=bWFzdGVyfHJvb3R8MTI2MDk2fGltYWdlL3BuZ3xoNjAvaGM0LzE1MjcwNDE3MDcyMTU4LnBuZ3w1YzBhMmI0YTQ0ZWI1NDg4NjBkYjk3ODZkNTg1NzkxNDQ4YWIwZDNlZDczNjRjZDY4Mjk4YTg1MTZmMTI0NzFk"
+                                alt="Teriyaki Rice Bowl">
+                            <p>Teriyaki Rice Bowl</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.facebook.com/tfalusa/posts/10164583988875615" target="_blank">
+                            <img src="https://www.tfalusa.com/medias/Bulgogi-Kimbap.png?context=bWFzdGVyfHJvb3R8MTEzODI4fGltYWdlL3BuZ3xoNWQvaDU0LzE1MjcwNDE3MjAzMjMwLnBuZ3xlMWFkN2ZjMWExM2UyNGRhOWQ5MjM1MTFkMDk2MjQxMjVjYjY0OGE4NGQ3NzIxZDI0ZWZjMWIzOGEyMGUyZmY0"
+                                alt="Bulgogi Kimbap">
+                            <p>Bulgogi Kimbap</p>
+                        </a>
+                    </div>
+                
+                    
+                </div>
+            </div>
+    </section>
+    <section id="section-5" class="section" >
+        <style>
+            #section-5 {
+                margin: 0 auto;
+                max-width: 1166px;
+            }
+            .row1, .row2 {
+                display: flex;
+                justify-content: center;                
+            }
+            .row1 img, 
+            .row2 img {
+                width: 33%;
+            }
+            @media screen and (max-width: 1200px) {
+                #section-5 {
+                    width: 100%;
+                    max-width: 100%;
+                }
+                .row1 img, 
+                .row2 img {
+                    flex: 1;
+                    flex-shrink:1
+                }
+            }
+        </style>
+        <div class="row1">        
+            
+                <img src="https://www.tfalusa.com/medias/Tfal.png?context=bWFzdGVyfHJvb3R8MTAwMTR8aW1hZ2UvcG5nfGgwOC9oZDcvMTU0MTYyMDQ4MjA1MTAucG5nfDQyYzRjODI4Yjk2ZDBlMDA5ZjgzZWQ3YWVhY2UyM2U3MTJmMDgxNDExZTJhYWI5YWRiZTZhNDkyYjM4ZmJjOTI" alt="T-fal platinum" />
+
+            
+                <img src="https://www.tfalusa.com/medias/Pizza.jpg?context=bWFzdGVyfHJvb3R8MTIwODY0fGltYWdlL2pwZWd8aDBkL2hhZS8xNTI3MDQxODE4NjI3MC5qcGd8ZTM0OTQxNTdkZmVkMDlmYzJmNWJmOWE2YmQzNmM2Yzk3MDI0MjZlNjcyY2YzNWIwNGQyODhiZDhhODY5MjIwNw" alt="pizza with pan" />
+
+            
+                <img src="https://www.tfalusa.com/medias/Nonstick.png?context=bWFzdGVyfHJvb3R8MTA3MDl8aW1hZ2UvcG5nfGhiNi9oYTgvMTU0MTYzNTU3ODI2ODYucG5nfDdjMTc3YTcxY2M5OTA4MzE5Y2RlNmY3ZWFhNzUxMjU1YmU2YTAxNzMzZWE3MmVhNzM0MGY4MmYwZDg1NzNmMjE" alt="Longest Lasting Non-Stick in the USA1" />
+            
+        </div>     
+        <div class="row2">        
+            
+                <img src="https://www.tfalusa.com/medias/Woman.jpg?context=bWFzdGVyfHJvb3R8MzIzNDh8aW1hZ2UvanBlZ3xoMDAvaDZkLzE1MjcwNDE4MzE3MzQyLmpwZ3w2MTczYzI4NmI1YWYzNDllYWMzYTM0MGIxNGUxMTg4MmY3MmZkMTFhZDM3ZTZlM2NjOTk2MGI1YzY5NWU0MTg3" alt="man cooking" />
+
+            
+                <img src="https://www.tfalusa.com/medias/Quote.png?context=bWFzdGVyfHJvb3R8MTU5NDF8aW1hZ2UvcG5nfGhkNi9oM2YvMTU0MTYzNTU4NDgyMjIucG5nfGUwOGM3NGUwZDMwMmI3YWNkYThiNzJiNWY2YWU2NWFlNGY2MDMzODI0ZDI4ODIzNzIyMTdiYzgyMGIwY2VhODA" alt="The look of these pans is as impressive as the durability. I will always be a fan as well as a customer.-Jonny1963" />
+
+            
+                <img src="https://www.tfalusa.com/medias/CloseUp.jpg?context=bWFzdGVyfHJvb3R8NDg2NTN8aW1hZ2UvanBlZ3xoYzIvaDZlLzE1MjcwNDE4NTc5NDg2LmpwZ3xjMWM4ZDM1MTlmMDQyNmQ2Y2UyNWJhNzMzNzExZDNjYzAzYjcwZDAyN2NhYzMxOTlhMjNjMGIxOTliYjRhMDAz" alt="salmon" />
+            
+        </div>  <p style="font-size: 10px; margin: 20px;">1 Based on abrasion and non-stick external testing done vs top 10 non-stick aluminum competitor pans <$29.99 (excluding hard anodized). 2020 Independent volume data.<br />
+            2 Vs T-Fal basic coatings<br />
+            3 No intentional addition of lead and cadmium in the coatings. No migration at detection threshold
+            </p> 
+    </section>
+    
+    
+
+    <div class="modal-video">
+        <div class="video-container">
+            <span class="close-modal">
+                <span class="iconmoon-highlight_off"></span>
+            </span>
+            <iframe width="900" height="506" src="" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+
+    <div id="ModalCommerce" class="modal hide fade in" data-backdrop="true" aria-hidden="true" style="display: none;">
+        <div class="pull-right">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <img src="https://www.tfalusa.com/_ui/desktop/common/img/close-big.png" alt="alt" data-dismiss="modal">
+            </button>
+        </div>
+        <div class="modal-body"></div>
+    </div>
+
+    <div class="video-bg"></div>   
+
+</div>
